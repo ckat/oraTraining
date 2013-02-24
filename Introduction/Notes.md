@@ -1,6 +1,7 @@
 #Проверялка
 http://evuakyisd0228.kyiv.epam.com:8080/apex/f?p=102
 alexander_kudryavtcev
+http://www.classmarker.com/online-test/start/?quiz=hp9511a5f2b19933
 
 #perfomance
 	SELECT * FROM V$SQLSTATS
@@ -173,4 +174,12 @@ DBMS_RANDOM.string('A', X) - создает случайную строку
 #nextval
 	seq.nextval - генерирует новый id
 	seq.currval - последнее сгенерированный id в _рамках сессии_
-	nextval генерится од
+	nextval генерится один раз в выражении
+
+#индексы
+	с каждым значением в индекс сохраняется ROWID, по которой БД быстро находит данные
+	branch blocks, leaf blocks
+	set timing on
+	set autotrace on
+	/* +HINT */
+	like '%s' - делаем колонку содержащую перевернутую строку
